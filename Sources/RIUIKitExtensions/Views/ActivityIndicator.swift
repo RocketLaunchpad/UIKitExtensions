@@ -36,6 +36,7 @@ public class ActivityIndicator: UIView {
         let spinner: UIActivityIndicatorView
         if #available(iOS 13.0, *) {
             spinner = UIActivityIndicatorView(style: .large)
+            spinner.color = .white
         } else {
             spinner = UIActivityIndicatorView(style: .whiteLarge)
         }
