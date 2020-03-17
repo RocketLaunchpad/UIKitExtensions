@@ -20,7 +20,6 @@
 		C5AAFA6D242127110073638D /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA6C242127110073638D /* UITableView+Dequeue.swift */; };
 		C5AAFA732421274A0073638D /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA722421274A0073638D /* UITableViewCell+ReuseIdentifier.swift */; };
 		C5AAFA75242127660073638D /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA74242127660073638D /* UIViewController+Alert.swift */; };
-		C5AAFA792421279E0073638D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5AAFA782421279E0073638D /* Localizable.strings */; };
 		C5AAFA7B242127EC0073638D /* UIViewController+Instantiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA7A242127EC0073638D /* UIViewController+Instantiation.swift */; };
 		C5AAFA7E2421280F0073638D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA7D2421280F0073638D /* ActivityIndicator.swift */; };
 		C5AAFA80242129020073638D /* RIUIKitExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52A633322F71EB900A0F7BA /* RIUIKitExtensions.framework */; };
@@ -78,7 +77,6 @@
 		C5AAFA6C242127110073638D /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
 		C5AAFA722421274A0073638D /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		C5AAFA74242127660073638D /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
-		C5AAFA782421279E0073638D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C5AAFA7A242127EC0073638D /* UIViewController+Instantiation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Instantiation.swift"; sourceTree = "<group>"; };
 		C5AAFA7D2421280F0073638D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		C5AAFA85242144B20073638D /* UIWindow+Transitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Transitions.swift"; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 			children = (
 				C5AAFA7C242128060073638D /* Views */,
 				C5AAFA77242127840073638D /* Extensions */,
-				C5AAFA762421277D0073638D /* Resources */,
 				C52A633622F71EB900A0F7BA /* RIUIKitExtensions.h */,
 				C52A633722F71EB900A0F7BA /* Info.plist */,
 			);
@@ -196,14 +193,6 @@
 				C52A635522F71F7800A0F7BA /* RIUIKitExtensionsExample */,
 			);
 			path = Examples;
-			sourceTree = "<group>";
-		};
-		C5AAFA762421277D0073638D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C5AAFA782421279E0073638D /* Localizable.strings */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		C5AAFA77242127840073638D /* Extensions */ = {
@@ -351,7 +340,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5AAFA792421279E0073638D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

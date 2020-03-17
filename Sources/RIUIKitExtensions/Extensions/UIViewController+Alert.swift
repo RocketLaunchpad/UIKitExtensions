@@ -36,7 +36,7 @@ extension UIViewController {
      */
     public func show(_ error: Error?, dismissHandler: (() -> Void)? = nil) {
         let message = error?.localizedDescription ??
-            NSLocalizedString("UIViewController.genericErrorMessage", comment: "Generic error message")
+            NSLocalizedString("An error occurred", comment: "Generic error alert message")
         show(errorMessage: message, dismissHandler: dismissHandler)
     }
 
@@ -47,7 +47,7 @@ extension UIViewController {
      - parameter dismissHandler: The callback to be invoked when the alert's action is performed.
      */
     public func show(errorMessage: String, dismissHandler: (() -> Void)? = nil) {
-        let title = NSLocalizedString("UIViewController.errorAlertTitle", comment: "Error alert title")
+        let title = NSLocalizedString("Error", comment: "Error alert title")
         showAlert(title: title,
                   message: errorMessage,
                   dismissHandler: dismissHandler)
@@ -62,7 +62,7 @@ extension UIViewController {
      */
     public func showAlert(title: String, message: String? = nil, dismissHandler: (() -> Void)? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let title = NSLocalizedString("UIViewController.ok", comment: "OK")
+        let title = NSLocalizedString("OK", comment: "OK")
 
         alert.addAction(UIAlertAction(title: title, style: .default, handler: { _ in
             dismissHandler?()
