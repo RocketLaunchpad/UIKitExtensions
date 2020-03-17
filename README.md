@@ -1,4 +1,7 @@
 # RIUIKitExtensions
 
-Generated from [FrameworkTemplate](https://github.com/pwc3/FrameworkTemplate) on 2020-03-17.
+To include in your project:
 
+```
+pod 'RIUIKitExtensions', :git => 'https://github.com/RocketLaunchpad/RIUIKitExtensions.git', :branch => 'master'
+```

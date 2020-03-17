@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = RIUIKitExtensions.text
+        label.textColor = UIColor(rgbHex: 0x0000C0)
     }
 }
 

@@ -1,5 +1,5 @@
 //
-//  RIUIKitExtensions.h
+//  UITableViewCell+ReuseIdentifier.swift
 //  RIUIKitExtensions
 //
 //  Copyright (c) 2020 Rocket Insights, Inc.
@@ -23,12 +23,11 @@
 //  DEALINGS IN THE SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
+import UIKit
 
-//! Project version number for RIUIKitExtensions.
-FOUNDATION_EXPORT double RIUIKitExtensionsVersionNumber;
+extension UITableViewCell {
 
-//! Project version string for RIUIKitExtensions.
-FOUNDATION_EXPORT const unsigned char RIUIKitExtensionsVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <RIUIKitExtensions/PublicHeader.h>
+    public static var reuseIdentifier: String {
+        return String(describing: Self.self)
+    }
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,16 @@
 		C52A635C22F71F7800A0F7BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52A635A22F71F7800A0F7BA /* Main.storyboard */; };
 		C52A635E22F71F7900A0F7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52A635D22F71F7900A0F7BA /* Assets.xcassets */; };
 		C52A636122F71F7900A0F7BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52A635F22F71F7900A0F7BA /* LaunchScreen.storyboard */; };
-		C52A636822F71FD200A0F7BA /* RIUIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52A636722F71FD200A0F7BA /* RIUIKitExtensions.swift */; };
+		C5AAFA69242126AC0073638D /* UIApplication+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA68242126AC0073638D /* UIApplication+Settings.swift */; };
+		C5AAFA6B242126EF0073638D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA6A242126EF0073638D /* UIColor+Hex.swift */; };
+		C5AAFA6D242127110073638D /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA6C242127110073638D /* UITableView+Dequeue.swift */; };
+		C5AAFA732421274A0073638D /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA722421274A0073638D /* UITableViewCell+ReuseIdentifier.swift */; };
+		C5AAFA75242127660073638D /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA74242127660073638D /* UIViewController+Alert.swift */; };
+		C5AAFA792421279E0073638D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5AAFA782421279E0073638D /* Localizable.strings */; };
+		C5AAFA7B242127EC0073638D /* UIViewController+Instantiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA7A242127EC0073638D /* UIViewController+Instantiation.swift */; };
+		C5AAFA7E2421280F0073638D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA7D2421280F0073638D /* ActivityIndicator.swift */; };
+		C5AAFA80242129020073638D /* RIUIKitExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52A633322F71EB900A0F7BA /* RIUIKitExtensions.framework */; };
+		C5AAFA81242129020073638D /* RIUIKitExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C52A633322F71EB900A0F7BA /* RIUIKitExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +35,28 @@
 			remoteGlobalIDString = C52A633222F71EB900A0F7BA;
 			remoteInfo = RIUIKitExtensions;
 		};
+		C5AAFA82242129020073638D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C52A632A22F71EB900A0F7BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C52A633222F71EB900A0F7BA;
+			remoteInfo = RIUIKitExtensions;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C5AAFA84242129020073638D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C5AAFA81242129020073638D /* RIUIKitExtensions.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C52A633322F71EB900A0F7BA /* RIUIKitExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RIUIKitExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +72,14 @@
 		C52A635D22F71F7900A0F7BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C52A636022F71F7900A0F7BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C52A636222F71F7900A0F7BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C52A636722F71FD200A0F7BA /* RIUIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIUIKitExtensions.swift; sourceTree = "<group>"; };
+		C5AAFA68242126AC0073638D /* UIApplication+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Settings.swift"; sourceTree = "<group>"; };
+		C5AAFA6A242126EF0073638D /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		C5AAFA6C242127110073638D /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
+		C5AAFA722421274A0073638D /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
+		C5AAFA74242127660073638D /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		C5AAFA782421279E0073638D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C5AAFA7A242127EC0073638D /* UIViewController+Instantiation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Instantiation.swift"; sourceTree = "<group>"; };
+		C5AAFA7D2421280F0073638D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AAFA80242129020073638D /* RIUIKitExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +124,7 @@
 				C52A636622F71F7E00A0F7BA /* Examples */,
 				C52A633422F71EB900A0F7BA /* Products */,
 				7739DC5A4037647795B2ADFA /* Pods */,
+				C5AAFA7F242129020073638D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,8 +141,10 @@
 		C52A633522F71EB900A0F7BA /* RIUIKitExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				C5AAFA7C242128060073638D /* Views */,
+				C5AAFA77242127840073638D /* Extensions */,
+				C5AAFA762421277D0073638D /* Resources */,
 				C52A633622F71EB900A0F7BA /* RIUIKitExtensions.h */,
-				C52A636722F71FD200A0F7BA /* RIUIKitExtensions.swift */,
 				C52A633722F71EB900A0F7BA /* Info.plist */,
 			);
 			path = RIUIKitExtensions;
@@ -153,6 +194,42 @@
 				C52A635522F71F7800A0F7BA /* RIUIKitExtensionsExample */,
 			);
 			path = Examples;
+			sourceTree = "<group>";
+		};
+		C5AAFA762421277D0073638D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAFA782421279E0073638D /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5AAFA77242127840073638D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAFA68242126AC0073638D /* UIApplication+Settings.swift */,
+				C5AAFA6A242126EF0073638D /* UIColor+Hex.swift */,
+				C5AAFA6C242127110073638D /* UITableView+Dequeue.swift */,
+				C5AAFA722421274A0073638D /* UITableViewCell+ReuseIdentifier.swift */,
+				C5AAFA74242127660073638D /* UIViewController+Alert.swift */,
+				C5AAFA7A242127EC0073638D /* UIViewController+Instantiation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5AAFA7C242128060073638D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAFA7D2421280F0073638D /* ActivityIndicator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5AAFA7F242129020073638D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,10 +289,12 @@
 				C52A635022F71F7800A0F7BA /* Sources */,
 				C52A635122F71F7800A0F7BA /* Frameworks */,
 				C52A635222F71F7800A0F7BA /* Resources */,
+				C5AAFA84242129020073638D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C5AAFA83242129020073638D /* PBXTargetDependency */,
 			);
 			name = RIUIKitExtensionsExample;
 			productName = RIUIKitExtensionsExample;
@@ -234,7 +313,7 @@
 				TargetAttributes = {
 					C52A633222F71EB900A0F7BA = {
 						CreatedOnToolsVersion = 10.2.1;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1120;
 					};
 					C52A633B22F71EB900A0F7BA = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -269,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AAFA792421279E0073638D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +376,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C52A636822F71FD200A0F7BA /* RIUIKitExtensions.swift in Sources */,
+				C5AAFA75242127660073638D /* UIViewController+Alert.swift in Sources */,
+				C5AAFA6D242127110073638D /* UITableView+Dequeue.swift in Sources */,
+				C5AAFA7B242127EC0073638D /* UIViewController+Instantiation.swift in Sources */,
+				C5AAFA69242126AC0073638D /* UIApplication+Settings.swift in Sources */,
+				C5AAFA7E2421280F0073638D /* ActivityIndicator.swift in Sources */,
+				C5AAFA6B242126EF0073638D /* UIColor+Hex.swift in Sources */,
+				C5AAFA732421274A0073638D /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +410,11 @@
 			isa = PBXTargetDependency;
 			target = C52A633222F71EB900A0F7BA /* RIUIKitExtensions */;
 			targetProxy = C52A633E22F71EB900A0F7BA /* PBXContainerItemProxy */;
+		};
+		C5AAFA83242129020073638D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C52A633222F71EB900A0F7BA /* RIUIKitExtensions */;
+			targetProxy = C5AAFA82242129020073638D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

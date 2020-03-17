@@ -1,5 +1,5 @@
 //
-//  RIUIKitExtensions.swift
+//  UIApplication+Settings.swift
 //  RIUIKitExtensions
 //
 //  Copyright (c) 2020 Rocket Insights, Inc.
@@ -23,9 +23,15 @@
 //  DEALINGS IN THE SOFTWARE.
 //
 
-import Foundation
+import UIKit
 
-public struct RIUIKitExtensions {
+extension UIApplication {
 
-    public static let text = "Hello, world"
+    public func openSettings(completionHandler completion: ((Bool) -> Void)? = nil) {
+        guard let url = URL(string: UIApplication.openSettingsURLString) else {
+            fatalError("Cannot create URL from string")
+        }
+
+        UIApplication.shared.open(url, completionHandler: completion)
+    }
 }

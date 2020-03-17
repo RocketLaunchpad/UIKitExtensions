@@ -1,5 +1,5 @@
 //
-//  RIUIKitExtensions.h
+//  UITableView+Dequeue.swift
 //  RIUIKitExtensions
 //
 //  Copyright (c) 2020 Rocket Insights, Inc.
@@ -23,12 +23,15 @@
 //  DEALINGS IN THE SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
+import UIKit
 
-//! Project version number for RIUIKitExtensions.
-FOUNDATION_EXPORT double RIUIKitExtensionsVersionNumber;
+extension UITableView {
 
-//! Project version string for RIUIKitExtensions.
-FOUNDATION_EXPORT const unsigned char RIUIKitExtensionsVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <RIUIKitExtensions/PublicHeader.h>
+    public func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T {
+        let id = T.reuseIdentifier
+        guard let cell = dequeueReusableCell(withIdentifier: id, for: indexPath) as? T else {
+            fatalError("Could not dequeue reusable cell with identifier \(id) for index path \(indexPath)")
+        }
+        return cell
+    }
+}
