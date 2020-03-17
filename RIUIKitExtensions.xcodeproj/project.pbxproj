@@ -25,6 +25,7 @@
 		C5AAFA7E2421280F0073638D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA7D2421280F0073638D /* ActivityIndicator.swift */; };
 		C5AAFA80242129020073638D /* RIUIKitExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52A633322F71EB900A0F7BA /* RIUIKitExtensions.framework */; };
 		C5AAFA81242129020073638D /* RIUIKitExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C52A633322F71EB900A0F7BA /* RIUIKitExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5AAFA86242144B20073638D /* UIWindow+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAFA85242144B20073638D /* UIWindow+Transitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		C5AAFA782421279E0073638D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C5AAFA7A242127EC0073638D /* UIViewController+Instantiation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Instantiation.swift"; sourceTree = "<group>"; };
 		C5AAFA7D2421280F0073638D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		C5AAFA85242144B20073638D /* UIWindow+Transitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Transitions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 				C5AAFA722421274A0073638D /* UITableViewCell+ReuseIdentifier.swift */,
 				C5AAFA74242127660073638D /* UIViewController+Alert.swift */,
 				C5AAFA7A242127EC0073638D /* UIViewController+Instantiation.swift */,
+				C5AAFA85242144B20073638D /* UIWindow+Transitions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				C5AAFA6D242127110073638D /* UITableView+Dequeue.swift in Sources */,
 				C5AAFA7B242127EC0073638D /* UIViewController+Instantiation.swift in Sources */,
 				C5AAFA69242126AC0073638D /* UIApplication+Settings.swift in Sources */,
+				C5AAFA86242144B20073638D /* UIWindow+Transitions.swift in Sources */,
 				C5AAFA7E2421280F0073638D /* ActivityIndicator.swift in Sources */,
 				C5AAFA6B242126EF0073638D /* UIColor+Hex.swift in Sources */,
 				C5AAFA732421274A0073638D /* UITableViewCell+ReuseIdentifier.swift in Sources */,
