@@ -25,9 +25,9 @@
 
 import UIKit
 
-extension UIWindow {
+public extension UIWindow {
 
-    public static let defaultTransitionDuration = TimeInterval(0.25)
+    static let defaultTransitionDuration = TimeInterval(0.25)
 
     /**
      Replaces this window's root view controller with the specified view controller. Animates the transition using the
@@ -42,10 +42,10 @@ extension UIWindow {
      completion handler was called. If the duration of the animation is 0, this block is performed at the beginning of
      the next run loop cycle. This parameter may be `nil`.
      */
-    public func replaceRootViewController(with viewController: UIViewController,
-                                          options: UIView.AnimationOptions,
-                                          duration: TimeInterval = UIWindow.defaultTransitionDuration,
-                                          completion: ((Bool) -> Void)? = nil) {
+    func replaceRootViewController(with viewController: UIViewController,
+                                   options: UIView.AnimationOptions,
+                                   duration: TimeInterval = UIWindow.defaultTransitionDuration,
+                                   completion: ((Bool) -> Void)? = nil) {
 
         UIView.transition(with: self, duration: duration, options: options, animations: {
             self.rootViewController = viewController

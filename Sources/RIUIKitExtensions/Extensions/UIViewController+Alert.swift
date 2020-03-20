@@ -25,7 +25,7 @@
 
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
 
     /**
      Show an alert for the specified error. If the error is non-nil, its localized description will be shown as the
@@ -34,7 +34,7 @@ extension UIViewController {
      - parameter error: The error to be displayed.
      - parameter dismissHandler: The callback to be invoked when the alert's action is performed.
      */
-    public func show(_ error: Error?, dismissHandler: (() -> Void)? = nil) {
+    func show(_ error: Error?, dismissHandler: (() -> Void)? = nil) {
         let message = error?.localizedDescription ??
             NSLocalizedString("An error occurred", comment: "Generic error alert message")
         show(errorMessage: message, dismissHandler: dismissHandler)
@@ -46,7 +46,7 @@ extension UIViewController {
      - parameter errorMessage: The error message to be displayed.
      - parameter dismissHandler: The callback to be invoked when the alert's action is performed.
      */
-    public func show(errorMessage: String, dismissHandler: (() -> Void)? = nil) {
+    func show(errorMessage: String, dismissHandler: (() -> Void)? = nil) {
         let title = NSLocalizedString("Error", comment: "Error alert title")
         showAlert(title: title,
                   message: errorMessage,
@@ -60,7 +60,7 @@ extension UIViewController {
      - parameter message: The alert message.
      - parameter dismissHandler: The callback to be invoked when the alert's action is performed.
      */
-    public func showAlert(title: String, message: String? = nil, dismissHandler: (() -> Void)? = nil) {
+    func showAlert(title: String, message: String? = nil, dismissHandler: (() -> Void)? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let title = NSLocalizedString("OK", comment: "OK")
 

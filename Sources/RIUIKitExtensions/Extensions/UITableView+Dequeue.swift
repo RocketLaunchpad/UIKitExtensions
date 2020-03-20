@@ -25,9 +25,9 @@
 
 import UIKit
 
-extension UITableView {
+public extension UITableView {
 
-    public func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T {
+    func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T {
         let id = T.reuseIdentifier
         guard let cell = dequeueReusableCell(withIdentifier: id, for: indexPath) as? T else {
             fatalError("Could not dequeue reusable cell with identifier \(id) for index path \(indexPath)")

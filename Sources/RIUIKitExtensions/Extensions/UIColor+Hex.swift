@@ -33,9 +33,9 @@ private func colorByte(fromComponent: CGFloat) -> UInt8 {
     return UInt8(fromComponent * 255.0)
 }
 
-extension UIColor {
+public extension UIColor {
 
-    public convenience init(r: Int, g: Int, b: Int, a: CGFloat = 1.0) {
+    convenience init(r: Int, g: Int, b: Int, a: CGFloat = 1.0) {
         func confineColorValue(value: Int) -> Int {
             var adjustedValue = value
 
@@ -52,11 +52,11 @@ extension UIColor {
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: a)
     }
 
-    public convenience init(rgbHex: Int, alpha: CGFloat = 1) {
+    convenience init(rgbHex: Int, alpha: CGFloat = 1) {
         self.init(r: (rgbHex >> 16) & 0xFF, g: (rgbHex >> 8) & 0xFF, b: rgbHex & 0xFF, a: alpha)
     }
 
-    public var rgbaComponents: (r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) {
+    var rgbaComponents: (r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) {
         var r = CGFloat(0)
         var g = CGFloat(0)
         var b = CGFloat(0)
@@ -66,12 +66,12 @@ extension UIColor {
         return (r, g, b, a)
     }
 
-    public var hexString: String {
+    var hexString: String {
         let (r, g, b, _) = rgbaComponents
         return String(format: "#%02X%02X%02X", colorByte(fromComponent: r), colorByte(fromComponent: g), colorByte(fromComponent: b))
     }
 
-    public static func colorFromHex(red: UInt8, green: UInt8, blue: UInt8, alpha: UInt8) -> UIColor {
+    static func colorFromHex(red: UInt8, green: UInt8, blue: UInt8, alpha: UInt8) -> UIColor {
         return UIColor(red: colorComponent(fromByte: red), green: colorComponent(fromByte: green), blue: colorComponent(fromByte: blue), alpha: colorComponent(fromByte: alpha))
     }
 }

@@ -25,7 +25,7 @@
 
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
 
     /**
      Instantiates a view controller from a storyboard. Note that the storyboard must define view controller whose
@@ -35,7 +35,7 @@ extension UIViewController {
      `FooViewController` with a storyboard identifier of `FooViewController` in `aStoryboard`. If one does not exist, a
      fatal error will be raised.
      */
-    public static func instantiate(from storyboard: UIStoryboard) -> Self {
+    static func instantiate(from storyboard: UIStoryboard) -> Self {
         return instantiate(from: storyboard, identifier: String(describing: Self.self))
     }
 
@@ -44,7 +44,7 @@ extension UIViewController {
      view controller whose identifier matches the specified identifier. If one does not exist, a fatal errror will be
      raised.
      */
-    public static func instantiate(from storyboard: UIStoryboard, identifier id: String) -> Self {
+    static func instantiate(from storyboard: UIStoryboard, identifier id: String) -> Self {
         guard let vc = storyboard.instantiateViewController(withIdentifier: id) as? Self else {
             fatalError("Could not instantiate storyboard with identifier \"\(id)\" from \(storyboard)")
         }

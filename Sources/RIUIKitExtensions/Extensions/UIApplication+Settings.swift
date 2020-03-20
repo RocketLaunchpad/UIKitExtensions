@@ -25,11 +25,11 @@
 
 import UIKit
 
-extension UIApplication {
+public extension UIApplication {
 
-    public func openSettings(completionHandler completion: ((Bool) -> Void)? = nil) {
+    func openSettings(completionHandler completion: ((Bool) -> Void)? = nil) {
         guard let url = URL(string: UIApplication.openSettingsURLString) else {
-            fatalError("Cannot create URL from string")
+            fatalError("Cannot create URL from UIApplication.openSettingsURLString")
         }
 
         UIApplication.shared.open(url, completionHandler: completion)

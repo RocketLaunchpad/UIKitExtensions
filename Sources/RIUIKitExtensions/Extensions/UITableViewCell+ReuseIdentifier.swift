@@ -25,9 +25,9 @@
 
 import UIKit
 
-extension UITableViewCell {
+public extension UITableViewCell {
 
-    public static var reuseIdentifier: String {
+    static var reuseIdentifier: String {
         return String(describing: Self.self)
     }
 }
