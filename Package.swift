@@ -28,6 +28,9 @@ import PackageDescription
 
 let package = Package(
     name: "RIUIKitExtensions",
+    platforms: [
+        .iOS(.v11)
+    ],
     products: [
         .library(
             name: "RIUIKitExtensions",
