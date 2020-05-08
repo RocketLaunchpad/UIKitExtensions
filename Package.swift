@@ -1,7 +1,7 @@
 // swift-tools-version:5.2
 //
 //  Package.swift
-//  RIUIKitExtensions
+//  UIKitExtensions
 //
 //  Copyright (c) 2020 Rocket Insights, Inc.
 //
@@ -27,20 +27,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "RIUIKitExtensions",
+    name: "UIKitExtensions",
     platforms: [
         .iOS(.v11)
     ],
     products: [
         .library(
-            name: "RIUIKitExtensions",
-            targets: ["RIUIKitExtensions"]),
+            name: "UIKitExtensions",
+            targets: ["UIKitExtensions"]),
     ],
     dependencies: [
     ],
     targets: [
         .target(
-            name: "RIUIKitExtensions",
+            name: "UIKitExtensions",
             dependencies: []),
     ]
 )

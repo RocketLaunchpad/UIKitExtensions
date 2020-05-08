@@ -1,6 +1,6 @@
 //
-//  UITableViewCell+ReuseIdentifier.swift
-//  RIUIKitExtensions
+//  UITableView+Dequeue.swift
+//  UIKitExtensions
 //
 //  Copyright (c) 2020 Rocket Insights, Inc.
 //
@@ -25,9 +25,13 @@
 
 import UIKit
 
-public extension UITableViewCell {
+public extension UITableView {
 
-    static var reuseIdentifier: String {
-        return String(describing: Self.self)
+    func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T {
+        let id = T.reuseIdentifier
+        guard let cell = dequeueReusableCell(withIdentifier: id, for: indexPath) as? T else {
+            fatalError("Could not dequeue reusable cell with identifier \(id) for index path \(indexPath)")
+        }
+        return cell
     }
 }

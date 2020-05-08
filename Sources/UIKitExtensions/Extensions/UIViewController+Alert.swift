@@ -1,6 +1,6 @@
 //
 //  UIViewController+Alert.swift
-//  RIUIKitExtensions
+//  UIKitExtensions
 //
 //  Copyright (c) 2020 Rocket Insights, Inc.
 //
