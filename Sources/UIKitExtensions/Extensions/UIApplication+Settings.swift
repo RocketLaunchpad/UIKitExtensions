@@ -27,6 +27,8 @@ import UIKit
 
 public extension UIApplication {
 
+    // See: https://forums.swift.org/t/set-application-extension-api-only-on-a-spm-package/39333/10
+    @available(iOSApplicationExtension, unavailable)
     func openSettings(completionHandler completion: ((Bool) -> Void)? = nil) {
         guard let url = URL(string: UIApplication.openSettingsURLString) else {
             fatalError("Cannot create URL from UIApplication.openSettingsURLString")
