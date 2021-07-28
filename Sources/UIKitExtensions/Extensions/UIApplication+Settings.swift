@@ -32,6 +32,6 @@ public extension UIApplication {
             fatalError("Cannot create URL from UIApplication.openSettingsURLString")
         }
 
-        UIApplication.shared.open(url, completionHandler: completion)
+        open(url, completionHandler: completion)
     }
 }
